@@ -1,0 +1,10 @@
+{
+  "name": "graphql-tutorial",
+  "version": "1.0.0",
+  "description": "A GraphQL tutorial.",
+  "main": "index.js",
+  "repository": "https://github.com/madigan/graphql-tutorial",
+  "author": "John Lynn <john@otter.tech>",
+  "license": "MIT",
+  "private": true
+}
