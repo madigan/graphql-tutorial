@@ -8,17 +8,21 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": ":node .",
+    "start": "node .",
+    "dev": "nodemon index.js",
     "test": "mocha ./src",
     "tdd": "mocha -w ./src"
   },
   "dependencies": {
     "apollo-server-express": "^2.9.13",
     "express": "^4.17.1",
-    "graphql": "^14.5.8"
+    "faker": "^4.1.0",
+    "graphql": "^14.5.8",
+    "sqlite3": "^4.1.1"
   },
   "devDependencies": {
     "mocha": "^6.2.2",
+    "nodemon": "^2.0.2",
     "supertest": "^4.0.2"
   }
 }
