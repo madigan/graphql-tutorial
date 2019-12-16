@@ -29,7 +29,7 @@ type Planet {
     id: ID!
     name: String
     type: String
-    population: Int
+    population: Float
     image: URL
 }
 
