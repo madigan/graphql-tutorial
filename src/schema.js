@@ -12,6 +12,7 @@ type Query {
     """
     healthcheck:String
     mercenary(id:ID!):Mercenary
+    ships(make:String, model:String):[Ship]
 }
 
 type Mercenary {
@@ -30,7 +31,6 @@ type Planet {
     type: String
     population: Int
     image: URL
-    location: Planet
 }
 
 type Ship {
@@ -41,6 +41,7 @@ type Ship {
     make: String
     model: String
     threatLevel: ThreatLevel
+    location: Planet
 }
 
 type Merch {

@@ -1,7 +1,9 @@
-const server = require('./src/server');
+const createServer = require('./src/server');
 
 const PORT = process.env.PORT || 3000;
 
-server.listen({ port: PORT }, () =>
-    console.log(`Play with GraphQL at http://localhost:${PORT}/graphql`)
-);
+createServer().then(server =>
+    server.listen({ port: PORT }, () =>
+        console.log(`Play with GraphQL at http://localhost:${PORT}/graphql`)
+    )
+).catch(console.error);

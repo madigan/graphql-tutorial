@@ -1,3 +1,6 @@
 module.exports = {
-    Query: require('./Query')
+    Query: require('./Query'),
+    Mercenary: require('./Mercenary'),
+    Ship: require('./Ship'),
+    Merch: require('./Merch')
 }
